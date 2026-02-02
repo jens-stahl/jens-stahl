@@ -1,0 +1,522 @@
+body {
+    color: black;
+    background-color: #dfe7ef;
+    font-family: Helvetica, 'Trebuchet MS', Arial, sans-serif;
+    margin: 0;
+    padding: 1em;
+    overflow-y: scroll;
+    /*background:#F9F6FC;*/
+    min-width: 250px; /* Mindestbreite verhindert Umbruch und Anzeigefehler in modernen Browsern */
+    background: url("pics/background-source.gif") no-repeat scroll center top #FFFFFF;
+    /*
+    background-image:url(./pics/background_3.jpg);
+    background-repeat:repeat-x;
+    */
+}
+
+div#Mainpage {
+    margin: 0 auto;
+    width: 100%;
+    background-color: white;
+}
+@media only screen and (min-width: 1200px)  {
+    div#Mainpage {
+        width: 1024px;
+    }
+}
+
+
+/*Navigation*/
+
+ul#Navigation {
+    display: block;
+    font-size: 1em;
+    width: 57%;
+    float: left;
+    margin-top:30px;
+    clear:left;
+}
+
+ul#Navigation li {
+    margin-top: 5px;
+    padding: 0.0em;
+    display: block
+}
+
+ul#Navigation a {
+    font-weight: normal;
+    color: #404041;
+    text-decoration: none;
+    font-size:1.2em;
+}
+
+@media only screen and (min-width: 1000px)  {
+    ul#Navigation {
+        width:875px;
+        margin:23px auto;
+        margin-right:-70px;
+        margin-left: -8px;
+    }
+    ul#Navigation li {
+        padding-right: 24px;
+        display:inline;
+    }
+    ul#Navigation li:last-child {
+        margin-right:0px;
+        padding-right:0px;
+    }
+    ul#Navigation a {
+        font-weight: normal;
+        color: #404041;
+        text-decoration: none;
+        font-size:1em;
+    }
+
+}
+
+ul#Navigation a:hover {
+    color: black;
+    background-color: white;
+}
+
+ul#Navigation a:active {
+    color: #404041;
+    background-color: #00b1d5;
+}
+
+.selectedLink {
+    border-bottom: 2px solid #00b1d5;
+    width: 10px;
+}
+
+/*Header*/
+
+div#Header {
+    /*
+    background-image: url(./pics/Header_HG.gif);
+    background-repeat: no-repeat;
+    */
+    border-style:solid;
+    border-radius: 20px;
+    border-color:lightgrey;
+    border-width: 5px;
+    box-shadow: 10px 10px 20px grey;
+
+    vertical-align: middle;
+    /*background-image:url(./pics/header.jpg);*/
+    height: 115px;
+    padding-top: 2em;
+    padding-left: 0em;
+}
+
+div#Header #name {
+    font-size: 2.2em;
+    float: left;
+    color: #00b1d5;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    padding-left: 30px;
+}
+
+div#Header #name #strongLetter {
+    font-weight: bold;
+}
+
+div#Header #slogan {
+    float: left;
+    font-size: 1.0em;
+    font-weight: lighter;
+    color: #00b1d5;
+    display:block;
+    clear:left;
+    width:150px;
+    margin-bottom:45px;
+    margin-left:32px;
+    margin-top: 0px;
+    margin-right: -23px;
+}
+
+@media only screen and (min-width: 550px)  {
+    div#Header #slogan {
+        margin-top: 10px;
+        margin-right: -60px;
+        font-size: 1.2em;
+        width:400px;
+    }
+}
+
+@media only screen and (min-width: 1000px)  {
+    div#Header #slogan {
+        margin-right: 30px;
+        margin-top: 18px;
+        margin-bottom:0px;
+        float:right;
+        clear:none;
+    }
+}
+
+div#Header h1 {
+    font-size: 2em;
+    margin: 0 0 0.5em;
+}
+
+div#Header h2 {
+    font-size: 0.8em;
+    margin: 2em 0 0.5em;
+}
+
+h3 {
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+}
+h4 {
+    font-size: 1.3rem !important;
+    font-weight: bold !important;
+}
+
+div#Header img {
+    display: inline;
+    float: right;
+    margin-right: 1em;
+    margin-bottom: 5em;
+    padding-bottom: 5em;
+}
+
+div#Header #logo {
+    display:none;
+    padding:0px;
+    margin: 0px 10px 0px 0px;
+}
+@media only screen and (min-width: 360px)  {
+    div#Header #logo {
+        display:block;
+    }
+}
+
+img#header-line {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    width:70%;
+}
+img#header-line-mobile {
+    padding-top: 7px;
+    padding-bottom: 0px;
+    width:70%;
+}
+@media only screen and (min-width: 1000px)  {
+    img#header-line {
+        padding-top: 7px;
+        padding-bottom: 15px;
+        width:100%;
+    }
+    img#header-line-mobile {
+        display:none;
+    }
+    div#Header #logo {
+        padding:0px;
+        margin: 0px 18px 0px 0px;
+    }
+}
+
+div#Personal {
+    display: block;
+    font-size:0.7em;
+    border:none;
+    margin-bottom:20px;
+    width:90%;
+}
+@media only screen and (min-width: 1000px)  {
+    div#Personal {
+        margin-right:10px;
+        width:30%;
+        float:right;
+    }
+}
+
+div#keyBoardImg {
+    float: left;
+}
+
+div#laptopImg {
+    float: right;
+    display:inline;
+    margin: 0em 6em 0em 0em;
+}
+
+div#startPageText {
+    display: block;
+    width:90%;
+    text-align: justify;
+}
+
+@media only screen and (min-width: 1000px)  {
+    div#startPageText {
+        margin-left: 30px;
+        width: 60%;
+        text-align: justify;
+    }
+}
+
+/*Skills*/
+
+div#skillsText {
+    display: block;
+    margin-left: 30px;
+    margin-top:10px;
+    width: 80%;
+}
+
+div#skillsList {
+    display: block;
+    margin-left: 10px;
+    width: 90%;
+    font-family: Helvetica;
+    overflow:auto;
+}
+.skillColumn1, .skillColumn2, .skillColumn3 {
+    display:block;
+    float:left;
+}
+
+
+span#skillHeader {
+    color: #00b1d5;
+    font-family: Helvetica;
+    padding-left: 30px;
+    font-weight:bold;
+}
+
+
+div#skillsList a, div#skillsText a {
+    font-weight: normal;
+    text-decoration: underline;
+    color: #00b1d5;
+}
+
+#coloredList {
+    list-style-image: url(pics/list-dot.gif);
+    margin-left:-10px;
+}
+
+div#mavenText a {
+    color: #00b1d5;
+}
+
+div#jsfText a {
+    color: #00b1d5;
+}
+
+div#webServicesText a {
+    color: #00b1d5;
+}
+
+div#seoText a {
+    color: #00b1d5;
+}
+
+img#kaffee {
+    margin-left: 55px;
+    margin-top: 13px;
+}
+
+div#container {
+    margin-left: 0px;
+    margin-top:10px;
+    border-radius: 20px;
+    border-style:solid;
+    border-color:lightgrey;
+    border-width: 5px;
+    box-shadow: 10px 10px 20px grey;
+}
+
+div#Inhalt {
+    padding: 0px 1em 30px 30px;
+    width: 90%;
+    border-style: none;
+    float: top;
+}
+@media only screen and (min-width: 1000px)  {
+    div#Inhalt {
+        width: 95%;
+    }
+}
+
+/*Projekte*/
+
+div#Project {
+    padding: 2em 2em 2em 2em;
+    border-bottom: 1px solid #C0C0C0;
+}
+
+div#projectText {
+    display: block;
+    margin-left: 30px;
+    width: 80%;
+}
+
+.Referenz {
+    padding: 2em 2em 2em 2em;
+    border-bottom: 1px solid #C0C0C0;
+}
+
+/*Schulung*/
+
+div#Inhalt div#Schulung {
+    padding: 2em 2em 2em 2em;
+    border-bottom: 1px solid #C0C0C0;
+    clear:both;
+}
+
+div#Schulung h2 {
+    color: #404041;
+}
+
+div#handsImg {
+    margin-left: 30px;
+    margin-top:30px;
+    float: left;
+}
+
+div#coachText {
+    display: block;
+    margin-left: 20px;
+    width: 70%;
+    float:left;
+}
+
+div#dollsImg {
+    display:block;
+    margin-left: 10px;
+    float: left;
+}
+
+
+/*Publication Text*/
+
+
+div#magazinImg {
+    display:none;
+}
+div#handsKeyboardImg {
+    display:none;
+}
+
+@media only screen and (min-width: 1000px) {
+    div#magazinImg {
+        float: left;
+        display:block;
+    }
+    div#handsKeyboardImg {
+        float: left;
+        display:block;
+    }
+}
+
+div#handsKeyboardImg {
+    margin-right: 30px;
+    float: right;
+
+}
+
+@media only screen and (min-width: 1000px) {
+    div#publicationText {
+        display: block;
+        margin-left: 230px;
+        width: 48%;
+    }
+}
+
+
+div#publicationText a {
+    font-weight: normal;
+    text-decoration: underline;
+    color: #00b1d5;
+}
+
+/*Blog*/
+
+div#blogImg, div#blogImg img {
+    display:none;
+}
+div#blogText {
+    display: block;
+    width: 80%;
+}
+
+@media only screen and (min-width: 1000px) {
+    div#blogImg, div#blogImg  img {
+        float: left;
+        border: none;
+        display:block;
+    }
+    div#blogText {
+        display: block;
+        margin-left: 200px;
+        margin-bottom: 150px;
+        width: 48%;
+        padding-top: 20px;
+    }
+
+}
+
+
+div#blogText a {
+    color: #00b1d5;
+}
+
+/*Kontakt*/
+
+div#Inhalt div#impressum {
+    font-size: 0.9em;
+}
+
+div#contactText a {
+    color: #00b1d5;
+}
+
+div#contactText {
+    width: 90%;
+}
+
+@media only screen and (min-width: 1000px) {
+    div#contactText {
+        width: 80%;
+        padding-left: 30px;
+        padding-right: 50px;
+    }
+}
+
+div#header-text {
+    font-size: 1em;
+    margin: 1em 0em 0.5em;
+    color: #404041;
+    font-weight: bold;
+    width:65%;
+
+}
+
+div#Inhalt h2 {
+    font-size: 1.2em;
+    margin: 0.2em 0;
+}
+
+div#Inhalt p {
+    font-size: 1em;
+    margin: 1em 0;
+}
+
+div#Footer {
+    margin: 1em 0em 0em 0em;
+    font-size: 0.8em;
+    width:80%;
+    color: #404041;
+    vertical-align: bottom;
+    padding-top: 0.4em;
+    padding-left: 2em;
+}
+@media only screen and (min-width: 1000px)  {
+    div#Footer {
+        font-size: 12px;
+
+    }
+}
