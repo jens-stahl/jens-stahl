@@ -53,7 +53,7 @@ ul#Navigation a {
 @media only screen and (min-width: 1000px)  {
     ul#Navigation {
         width:875px;
-        margin:23px auto;
+        margin:35px auto;
         margin-right:-70px;
         margin-left: -8px;
     }
@@ -105,7 +105,8 @@ div#Header {
     vertical-align: middle;
     /*background-image:url(./pics/header.jpg);*/
     height: 115px;
-    padding-top: 2em;
+    padding-top: 2.5em;
+    padding-bottom: 0.5em;
     padding-left: 0em;
 }
 
@@ -145,13 +146,13 @@ div#Header #slogan {
     }
 }
 
-@media only screen and (min-width: 1000px)  {
+@media only screen and (min-width: 1000px) {
     div#Header #slogan {
-        margin-right: 30px;
-        margin-top: 18px;
-        margin-bottom:0px;
-        float:right;
-        clear:none;
+        margin-right: -20px;
+        margin-top: 12px;
+        margin-bottom: 0px;
+        float: right;
+        clear: none;
     }
 }
 
@@ -330,7 +331,7 @@ div#container {
 }
 
 div#Inhalt {
-    padding: 0px 1em 30px 30px;
+    padding: 10px 1em 30px 30px;
     width: 90%;
     border-style: none;
     float: top;
